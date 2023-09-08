@@ -50,3 +50,13 @@
     0%   { transform: translateX(0); }
     100% { transform: translateX(-100%); }
   }
+
+  @keyframes rotateY-anim {
+	0% {
+		transform: rotateY(0deg);
+	}
+
+	100% {
+		transform: rotateY(360deg);
+	}
+}
