@@ -1,3 +1,9 @@
+:root{
+    --primary-height : 800px;
+
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -100,7 +106,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 800px;
+    height: var(--primary-height);
     background-image: url(home-gif.gif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -149,7 +155,7 @@ body{
     user-select: none;
     overflow: hidden;
     width: 100%;
-    height: 800px;
+    height: var(--primary-height);
 }
 
 .galery-content{
@@ -167,20 +173,20 @@ body{
 /* Items section */
 .items{
     width: 100%;
-    height: 800px;
+    height: var(--primary-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .items img{
-    width: 800px;;
-    height: 800px;
+    width: 100%;
+    height: var(--primary-height);
     animation: rotateY-anim 5s linear infinite;
 }
 /* Size Guide section */
 .size-guide{
     width: 100%;
-    height: 800px;
+    height: var(--primary-height);
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -244,4 +250,349 @@ body{
 .contact .icons-contact i:hover{
     color: rgb(109, 36, 109);
     transform: translateY(-16px);
+}
+
+@media (max-width: 1440px) {
+    :root{
+        --primary-height : 600px; 
+    }
+
+    .hero{
+        padding-top: 16%;
+    }
+
+    .hero .home img{
+        width: 700px;
+        height: 700px;
+    }
+
+    .hero .about-us h1{
+        font-size: 80px;
+        margin-bottom: 48px;
+    }
+    
+    .hero .about-us p{
+        font-size: 40px;
+    }
+
+    .size-guide .size-box{
+        font-size: 48px;
+    }
+
+    .contact .icons-contact i{
+        font-size: 96px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    :root{
+        /* --primary-height : 500px;  */
+    }
+    .header .navlist a{
+        margin-left: 16px;
+    }
+
+    .hero{
+        /* background: red; */
+        padding-top: 16%;
+    }
+
+    .hero .home img{
+        width: 700px;
+        height: 700px;
+    }
+    .hero .about-us{
+        height: 500px;
+    }
+
+    .hero .about-us h1{
+        font-size: 64px;
+        margin-bottom: 48px;
+    }
+    
+    .hero .about-us p{
+        font-size: 32px;
+    }
+
+    .size-guide .size-box{
+        font-size: 32px;
+    }
+
+    .contact .icons-contact i{
+        font-size: 80px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    :root{
+        --primary-height : 500px; 
+    }
+    .header .navlist a{
+        font-size: 16px;
+        margin-left: 16px;
+    }
+    .logo img{
+        width: 96px;
+    }
+
+    .icons-header i{
+        font-size: 32px;
+    }
+
+    .hero{
+        /* background: red; */
+        padding-top: 16%;
+    }
+
+    .hero .home img{
+        width: 500px;
+        height: 500px;
+    }
+    .hero .about-us{
+        height: 500px;
+    }
+
+    .hero .about-us h1{
+        font-size: 36px;
+        margin-bottom: 48px;
+    }
+    
+    .hero .about-us p{
+        font-size: 24px;
+    }
+
+    .size-guide .size-box{
+        font-size: 24px;
+    }
+
+    .contact .icons-contact i{
+        font-size: 64px;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    :root{
+        --primary-height : 500px; 
+    }
+    .header .navlist{
+        display: none;
+    }
+
+    .header .navlist a{
+        font-size: 16px;
+        margin-left: 16px;
+    }
+
+    .button-menu{
+        display: flex;
+    }
+    .logo img{
+        width: 96px;
+    }
+
+    .icons-header i{
+        font-size: 32px;
+    }
+
+    .hero{
+        /* background: red; */
+        padding-top: 16%;
+    }
+
+    .hero .home img{
+        width: 500px;
+        height: 500px;
+    }
+    .hero .about-us{
+        height: 500px;
+    }
+
+    .hero .about-us h1{
+        font-size: 36px;
+        margin-bottom: 48px;
+    }
+    
+    .hero .about-us p{
+        font-size: 24px;
+    }
+
+    .size-guide .size-box{
+        font-size: 24px;
+    }
+
+    .contact .icons-contact i{
+        font-size: 64px;
+    }
+
+   
+}
+
+@media (max-width: 768px) {
+
+    :root{
+        --primary-height : 400px; 
+    }
+    .header .navlist{
+        display: none;
+    }
+
+    .header .navlist a{
+        font-size: 16px;
+        margin-left: 16px;
+    }
+
+    .button-menu{
+        display: flex;
+    }
+    .logo img{
+        width: 96px;
+    }
+
+    .icons-header i{
+        font-size: 32px;
+    }
+
+    .hero{
+        /* background: red; */
+        padding-top: 16%;
+    }
+
+    .hero .home img{
+        width: 400px;
+        height: 400px;
+    }
+    .hero .about-us{
+        height: 500px;
+    }
+
+    .hero .about-us h1{
+        font-size: 36px;
+        margin-bottom: 48px;
+    }
+    
+    .hero .about-us p{
+        font-size: 24px;
+    }
+
+    .items{
+        width: 100%;
+        /* background-color: aliceblue; */
+        height: 1200px;
+        flex-direction: column;
+    }
+
+    .items img{
+        width: 100%;        
+        height: 600px;
+    }
+
+    .size-guide .guide{
+        font-size: 12px;
+        letter-spacing: -0.5px;
+    }
+
+    .size-guide .size-box{
+        font-size: 16px;
+    }
+
+    .contact .icons-contact i{
+        font-size: 48px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    :root{
+        --primary-height : 400px; 
+    }
+    .header .navlist{
+        display: none;
+    }
+
+    .header .navlist a{
+        font-size: 16px;
+        margin-left: 16px;
+    }
+
+    .button-menu{
+        display: flex;
+    }
+    .logo img{
+        width: 96px;
+    }
+
+    .icons-header i{
+        font-size: 32px;
+    }
+
+    .hero{
+        /* background: red; */
+        padding-top: 24%;
+    }
+
+    .hero .home img{
+        width: 500px;
+        height: 500px;
+    }
+    .hero .about-us{
+        height: 500px;
+    }
+
+    .hero .about-us h1{
+        font-size: 36px;
+        margin-bottom: 48px;
+    }
+    
+    .hero .about-us p{
+        font-size: 24px;
+    }
+
+    .items{
+        width: 100%;
+        /* background-color: aliceblue; */
+        height: 1200px;
+        flex-direction: column;
+    }
+
+    .items img{
+        width: 100%;        
+        height: 600px;
+    }
+
+    .size-guide{
+        height: 600px;
+    }
+    .size-guide .guide{
+        font-size: 12px;
+        letter-spacing: -0.5px;
+    }
+
+    .size-guide .size-box{
+        height: 500px;
+        /* background: bisque; */
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+
+    }
+
+    .contact .icons-contact i{
+        font-size: 48px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+
+}
+
+@media (max-width: 320px) {
+
+
 }
