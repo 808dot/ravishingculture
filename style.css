@@ -88,6 +88,8 @@ body{
     font-size: 36px;
     cursor: pointer;
     display: none;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * 4);
 }
 
 /* Hero section */
@@ -604,8 +606,11 @@ body{
         --primary-height : 400px; 
     }
 
+    .header{
+        padding: 0 8%;
+    }
     .logo img{
-        width: 60px;
+        width: 70px;
     }
     
     .header .navlist a{
@@ -619,12 +624,12 @@ body{
     }
     
     .button-menu{
-        font-size: 6px;
+        font-size: 24px;
     }
 
     .hero{
         padding: 0 12%;
-        padding-top: 32%;
+        padding-top: 24%;
         
     }
     /* Home section */
