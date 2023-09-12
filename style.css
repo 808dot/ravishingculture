@@ -71,11 +71,11 @@ body{
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
-.icons-header .i-parent{
+.icons-header .i-wrapper{
     transition: .5s;
 }
 
-.icons-header .i-parent:hover {
+.icons-header .i-wrapper:hover {
     transform: translateY(-8px);
 }
 
