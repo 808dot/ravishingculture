@@ -1,5 +1,6 @@
 :root {
-  --primary-height: 800px;
+  --primary-height: 700px;
+  --scrool-top: 0px;
 }
 
 * {
@@ -10,6 +11,10 @@
   list-style: none;
   text-decoration: none;
   color: white;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -105,6 +110,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  scroll-margin-top: var(--scrool-top);
 }
 .hero .home img {
   width: var(--primary-height);
@@ -117,6 +123,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  scroll-margin-top: var(--scrool-top);
 }
 .hero .about-us .h1 {
   font-size: 48px;
@@ -143,7 +150,8 @@ body {
   display: flex;
   align-items: center;
   user-select: none;
-  overflow: hidden;
+  overflow: clip;
+  scroll-margin-top: var(--scrool-top);
 }
 .hero .galery .galery-content {
   display: flex;
@@ -162,6 +170,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  scroll-margin-top: var(--scrool-top);
 }
 .hero .items img {
   width: 100%;
@@ -175,6 +184,7 @@ body {
   justify-content: space-evenly;
   flex-direction: column;
   /* align-items: center; */
+  scroll-margin-top: var(--scrool-top);
 }
 .hero .size-guide .guide {
   display: flex;
@@ -209,6 +219,7 @@ body {
   height: 200px;
   display: flex;
   justify-content: center;
+  scroll-margin-top: var(--scrool-top);
 }
 .hero .contact .icons-contact {
   width: 75%;
@@ -269,9 +280,6 @@ body {
 @media (max-width: 900px) {
   .header .navlist {
     display: none;
-  }
-  .header .button-menu {
-    display: flex;
   }
 }
 @media (max-width: 768px) {
